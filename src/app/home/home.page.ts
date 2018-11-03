@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-
+  selected = 1;
+  list: any = [{ id: 0, text: '0' }, { id: 1, text: 1 }];
+  changed(e) {
+    console.log(this.selected);
+  }
 }

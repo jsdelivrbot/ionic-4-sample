@@ -10,18 +10,16 @@
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <ion-item *ngFor="let item of items">
-      <ion-icon [name]="item.icon" slot="start"></ion-icon>
-      {{item.title}}
-      <div class="item-note" slot="end">
-        {{item.note}}
-      </div>
-    </ion-item>
-  </ion-list>
-  <!--
-    <div *ngIf="selectedItem" padding>
-      You navigated here from <b>{{selectedItem.title }}</b>
-    </div>
-  -->
+  <ion-item>
+    <ion-avatar slot="start">
+ <img src="https://thumbnailer.mixcloud.com/unsafe/160x160/profile/c/3/8/a/7305-4d74-4def-893d-ee6fccf64e05.jpg">
+    </ion-avatar>
+    <ion-label>
+      <h2>Finn</h2>
+      <h3>I'm a big deal</h3>
+      <p>Listen, I've had a pretty messed up day...</p>
+    </ion-label>
+  </ion-item>
+
 </ion-content>
+
